@@ -27,7 +27,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/projectname"
-                    android:text="project1"
+                    android:text="2"
                     android:textColor="@color/black"
                     android:textSize="26dp"
                     android:textStyle="bold"/>
@@ -45,6 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/views"
             android:padding="15dp"
             android:layout_alignParentRight="true"
             android:text="15 views"/>
