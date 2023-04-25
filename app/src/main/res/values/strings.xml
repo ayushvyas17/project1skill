@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">list view</string>
+    <string name="author_s_github_profile">Author\'s Github profile</string>
+    <string name="project_name">Project Name</string>
 </resources>
