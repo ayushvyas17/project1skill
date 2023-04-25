@@ -8,7 +8,6 @@ import android.view.View
 import com.example.listview.databinding.ActivityMainBinding
 
 
-
 /*private fun ListView.setOnClickListener(function: (View, Any?, Any?, Any?) -> Unit) {
 
 }*/
@@ -32,9 +31,9 @@ class MainActivity : AppCompatActivity() {
             R.drawable.g,
             R.drawable.h
         )
-        val projectname= arrayOf("2","3","4","5","6","7","8")
-        val description= arrayOf("first","second","third","fourth","fifth","sixth","seventh","eighth")
-        val views= arrayOf("15 views","15 views","15 views","15 views","15 views","15 views","15 views")
+        val projectname= arrayOf("WhatsApp","Facebook","ArogyaSetu","Zomato","Kindle","Spotify","Flipkart")
+        val description= arrayOf("A Messaging app","Social media exploring and messaging app","An App for covid tracing ","Food delivering App","Book Reading App","Music Listening App","Online Shopping App",)
+        val views= arrayOf("355 views","190 views","203 views","120 views","69 views","288 views","354 views")
         val name= arrayOf("2","3","4","5","6","7","8")
         val email= arrayOf("1@","1@","1@","1@","1@","1@","1@")
         val githubprofile= arrayOf("1@#","1@#","1@#","1@#","1@#","1@#","1@#")
@@ -49,25 +48,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.listview.adapter=adapter(this@MainActivity,userArrayList)
-  //    binding.listview.setOnClickListener{parent,view,position,id  ->
-//
-//            val name=name[position]
-//
-//            val email=email[position]
-//
-//
-//            val imageid=imageid[position]
-//
-//            val i=intent(packagecontext: this,UserActivity::class.java)
-//
-//            i.putExtra(name:"name",name)
-//
-//            i.putExtra(email:"email",email)
-//
-//            startActivity(i)
-//
-//
-//        }
+
 
 
     }
@@ -76,4 +57,11 @@ class MainActivity : AppCompatActivity() {
         val intent=Intent(this,Activity_user::class.java)
         startActivity(intent)
     }
+
+    fun addproject(view: View) {
+        val intent=Intent(this,AddProjectActivity::class.java)
+        startActivity(intent)
+    }
+
+
 }
